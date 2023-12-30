@@ -17,21 +17,40 @@ class MainApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Card",
+                "Business Card",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 50,
+                  fontFamily: 'Pacifico',
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 30,
+              ),
+              Text(
+                "Nitipon P.",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontFamily: 'Pacifico',
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
               CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage("assets/images/profile.jpg"),
+                backgroundImage: AssetImage("assets/profile.jpg"),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Text(
                 "Flutter Developer",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 20,
                   color: Colors.amber,
                   fontWeight: FontWeight.bold,
                 ),
@@ -60,18 +79,21 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.phone,
+                    Icons.email,
                     color: Colors.pink,
                   ),
                   title: Text(
-                    "SHe;lask;dk",
+                    "nitipon9.dev@gmail.com",
                     style: TextStyle(
                       color: Colors.purple,
-                      fontFamily: 'SOurce Sans Pro',
+                      fontFamily: 'Source Sans Pro',
                       fontSize: 20.0,
                     ),
                   ),
